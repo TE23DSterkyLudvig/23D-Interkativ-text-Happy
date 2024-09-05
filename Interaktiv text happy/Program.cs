@@ -1,11 +1,14 @@
 ﻿Console.WriteLine("Skriv start för att börja spelet");
-String start = Console.ReadLine();
-String koval = Console.ReadLine();
-String Dödadraken = Console.ReadLine();
-String Dödaträsk = Console.ReadLine();
+string start = Console.ReadLine();
+string koval = Console.ReadLine();
+string Dödadraken = Console.ReadLine();;
+string Dödaträsk = Console.ReadLine();
 
 if (start == "Start" || start == "start"){  System.Console.WriteLine(@"Du vandrar genom en mörk skog i narnia och kommer plötsligt till en korsning, du kan antingen välja mellan att gå till draknästet eller att gå till den förtrollade dungen.
 Vilken väg ska du ta?");
+
+
+
 if (koval == "draknästet" || koval == "Draknästet")
 {
     System.Console.WriteLine("Du väljer att gå mot draknästet för att dräpa draken och sälja dess ägg");
@@ -14,7 +17,7 @@ else if (koval == "Den förtrollade dungen" || koval == "den förtrollade dungen
 {
     System.Console.WriteLine("Du väljer att gå vidare till den förtrollade dungen för att dräpa träskmonstret och ta dess hjärta");
 }}
-
+ koval = Console.ReadLine();
   
 
 
@@ -29,7 +32,15 @@ if (koval == "Den förtrollade dungen" || koval == "den förtrollade dungen")
     System.Console.WriteLine("Du går fram till tränskmonstret i dungen redo för att strida. Ska du gå för hjärtat direkt eller för armen?");
 }
 
+if (koval == "draknästet"|| koval =="Draknästet"){
+    Dödadraken = Console.ReadLine();
+    }
+else if(koval == "den förtrollade dungen" || koval == "Den förtrollade dungen"){
+    Dödaträsk = Console.ReadLine();
+}
+ 
 
+ 
 if (Dödadraken == "halsen" | Dödadraken == "Halsen")
 {
     System.Console.WriteLine("Du skär upp drakens hals och syra rinner ut. Du dör");
@@ -52,5 +63,5 @@ else if (Dödaträsk == "armen" || Dödaträsk == "Armen")
     System.Console.WriteLine("Du skär av monstrets arm men det skär av ditt huvud med den andra, Du dör. ");
     System.Console.WriteLine("Sad");
 }
+ Dödaträsk = Console.ReadLine();
 
-Console.ReadLine();
